@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-custom-gradient {
+  background-image: linear-gradient(#27272a, #27272a) padding-box,
+    linear-gradient(120deg, #3f3f46, rgba(63, 63, 70, 0), #3f3f46) border-box;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'inter', system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --card: #ffffff;
+    --card-foreground: #0a0a0a;
+    --popover: #ffffff;
+    --popover-foreground: #0a0a0a;
+    --primary: #b81081;
+    --primary-foreground: #ffeff7;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #171717;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
+    --accent: #f5f5f5;
+    --accent-foreground: #171717;
+    --destructive: #e6001a;
+    --destructive-foreground: #fafafa;
+    --border: #e4e4e4;
+    --input: #e4e4e4;
+    --ring: #b81081;
+    --radius: 0rem;
+    --chart-1: #e73f79;
+    --chart-2: #4db582;
+    --chart-3: #458b9e;
+    --chart-4: #9adc42;
+    --chart-5: #e3ff2a;
+  }
+
+  .dark {
+    --background: #27272a;
+    --foreground: #e4e4e7;
+    --card: #2e2e32;
+    --card-foreground: #fafafa;
+    --popover: #0a0a0a;
+    --popover-foreground: #fafafa;
+    --primary: #ff3348;
+    --primary-foreground: #ffeef0;
+    --secondary: #262626;
+    --secondary-foreground: #fafafa;
+    --muted: #262626;
+    --muted-foreground: #a1a1aa;
+    --accent: #262626;
+    --accent-foreground: #fafafa;
+    --destructive: #990014;
+    --destructive-foreground: #fafafa;
+    --dimmed: #71717A;
+    --hover: #212126;
+    --border: #2f2f35;
+    --input: #262626;
+    --ring: #ff3348;
+    --chart-1: #3399ff;
+    --chart-2: #33cc99;
+    --chart-3: #ffb347;
+    --chart-4: #cc66ff;
+    --chart-5: #ff6680;
+  }
+
+}
+
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
